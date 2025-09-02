@@ -110,5 +110,5 @@ This project is licensed under the MIT License.
 ## 📧 Contact
 
 -   **Author:** Faizan Tariq
--   **LinkedIn:** [linkedin.com/in/faizantariq](https://www.linkedin.com/in/faizantariq)
+-   **LinkedIn:** [linkedin.com/in/faizantariq](https://www.linkedin.com/in/faizantariq916/)
 -   **GitHub:** [github.com/faizant316](https://github.com/faizant316)
