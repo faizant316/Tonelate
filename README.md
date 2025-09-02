@@ -1,9 +1,9 @@
 # Tonelate - AI Communication Assistant ✨
 
-![Tonelate Screenshot](https://via.placeholder.com/1200x600?text=Tonelate+App+Screenshot)
+![Tonelate Screenshot](https://github.com/user-attachments/assets/8a02b57e-f88c-433b-8075-e016455521ea)
 
 **Live Demo:** [Try Tonelate Here!](#)  
-*(Link coming soon)*
+*(https://tonelate.base44.app/)*
 
 ---
 
@@ -35,7 +35,7 @@ This ensures clarity and professionalism whether you’re messaging in English, 
 
 Example below: English → French → Professional English back-translation.  
 
-![Tonelate Multi-Language Demo](relative/path/to/screenshot.png)
+![Tonelate Multi-Language Demo](https://github.com/user-attachments/assets/04069f3a-9269-4e16-a9df-e32c84813497)
 
 ---
 
