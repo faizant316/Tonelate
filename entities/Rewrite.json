@@ -1,0 +1,71 @@
+{
+  "name": "Rewrite",
+  "type": "object",
+  "properties": {
+    "original_text": {
+      "type": "string",
+      "description": "The original casual/slang text"
+    },
+    "rewritten_text": {
+      "type": "string",
+      "description": "The AI-rewritten professional text"
+    },
+    "output_language": {
+      "type": "string",
+      "description": "The language selected for the output"
+    },
+    "website": {
+      "type": "string",
+      "description": "Website where the rewrite occurred"
+    },
+    "context_type": {
+      "type": "string",
+      "enum": [
+        "email",
+        "social_media",
+        "messaging",
+        "document",
+        "form",
+        "other"
+      ],
+      "description": "Type of context where text was rewritten"
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "AI confidence in the rewrite quality"
+    },
+    "user_action": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "dismissed",
+        "ignored",
+        "modified"
+      ],
+      "description": "What the user did with the suggestion"
+    },
+    "processing_time": {
+      "type": "number",
+      "description": "Time taken to generate rewrite in milliseconds"
+    },
+    "word_count": {
+      "type": "number",
+      "description": "Number of words in original text"
+    }
+  },
+  "required": [
+    "original_text",
+    "rewritten_text",
+    "context_type"
+  ],
+  "rls": {
+    "read": {
+      "created_by": "{{user.email}}"
+    },
+    "write": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}
