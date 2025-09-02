@@ -39,7 +39,7 @@ The goal of Tonelate was to design and build a full-stack, AI-powered applicatio
 Tonelate doesn’t just polish English — it can seamlessly **translate and rewrite across multiple languages**.
 This ensures clarity and professionalism whether you’re messaging in English, French, Spanish, Arabic, or beyond.
 
-Example below: English → French → Professional English back-translation.  
+Example below: English → Chinese → Confident (5/5) English back-translation.  
 
 ![Tonelate Multi-Language Demo](https://github.com/user-attachments/assets/04069f3a-9269-4e16-a9df-e32c84813497)
 
