@@ -50,7 +50,7 @@ Example below: English → French → Professional English back-translation.
 Track total rewrites and usage trends, view acceptance rate of AI suggestions, and monitor activity by tone, time, and platform.
 
 <!-- Add a screenshot of your application's dashboard here. -->
-![Dashboard Preview](https://via.placeholder.com/1200x600?text=Dashboard+Screenshot+Here)
+![Dashboard Preview](https://github.com/user-attachments/assets/6ed716f8-bac1-4633-b7a9-d19ae43bcc10)
 
 ---
 
