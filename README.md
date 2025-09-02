@@ -49,49 +49,42 @@ Example below: English → Chinese → Confident (5/5) English back-translation.
 
 Track total rewrites and usage trends, view acceptance rate of AI suggestions, and monitor activity by tone, time, and platform.
 
-<!-- Add a screenshot of your application's dashboard here. -->
 ![Dashboard Preview](https://github.com/user-attachments/assets/6ed716f8-bac1-4633-b7a9-d19ae43bcc10)
 
 ---
 
-## 💻 Tech Stack
+## 💻 Tech Stack & Architecture
 
 ### **Frontend**
 
--   React.js – component-based UI
--   Tailwind CSS – responsive styling
--   Shadcn UI – reusable UI components
--   Lucide React – clean icon system
--   Recharts – interactive usage graphs
--   Framer Motion – smooth animations
+-   **React.js**: Core of the component-based UI, managing complex application state with hooks.
+-   **Tailwind CSS**: For a responsive and utility-first styling workflow.
+-   **Shadcn UI**: For a set of high-quality, accessible, and reusable UI components.
+-   **Lucide React**: Provided the clean and consistent icon system.
+-   **Recharts**: Used to build the interactive graphs on the user dashboard.
+-   **Framer Motion**: Implemented for smooth animations and micro-interactions.
 
-### **Backend**
+### **Backend & Data Modeling**
 
--   Python (Flask) – API logic and business rules
--   Node.js (integrations) – service hooks and async handling
--   RESTful API – endpoints for rewriting, user data, and analytics
--   Authentication – secure user login and authorization
--   Database schema – models for rewrites, users, teams, and preferences
+-   **JSON Schema**: Defined the data models for `Users`, `Rewrites`, and `Settings` in the `/entities` directory. These schemas enforce the structure and rules for all data managed by the platform's backend.
+-   **RESTful API Design**: Designed and consumed API endpoints for all core application logic, including text rewriting, user data management, and fetching analytics.
+-   **Serverless Functions**: Leveraged the platform's environment for integrations, such as making secure calls to the OpenAI API.
 
 ### **AI Integration**
 
--   OpenAI GPT models – for text rewriting, slang detection, and translation
--   Custom prompt logic – dynamically adapts requests to tone, style, and context
--   Decision-making layer – selects the best model/rules for each case
+-   **OpenAI GPT Models**: The core engine for text rewriting, slang detection, and translation.
+-   **Dynamic Prompt Engineering**: Created custom logic to build prompts that dynamically adapt to user-selected tone, style, and language.
+-   **Structured JSON Output**: Enforced a strict JSON output from the AI to ensure reliable data handling and parsing on the frontend.
 
 ---
 
-## 🔧 Architectural Notes & Project Setup
+## 🔧 Project Setup
 
-This application was developed on the **base44 platform**, a low-code solution that provides the backend infrastructure, database, and authentication. This allowed me to focus on designing the data models, orchestrating the AI logic, and building a polished user interface.
-
-**This project cannot be run locally with `npm install` and `flask run` in the traditional sense.** The code in this repository represents the custom logic and frontend components built on top of the platform.
-
-### **Core Components:**
+**This project cannot be run locally with `npm install` in the traditional sense.** The code in this repository represents the custom logic and frontend components built on top of the base44 platform.
 
 -   **`/pages`**: Contains the main React components for each page of the application (e.g., Dashboard, History, Settings).
--   **`/components`**: Holds all reusable React components used across various pages.
--   **`/entities`**: Defines the JSON schema for each database model, such as `User`, `Rewrite`, and `Settings`. These schemas dictate the structure and rules for the data managed by the base44 backend.
+-   **`/components`**: Holds all reusable React components used across various pages, organized by feature (`dashboard`, `shared`, `smart`).
+-   **`/entities`**: Defines the JSON schema for each database model. These schemas dictate the structure and rules for the data managed by the backend.
 
 ---
 
