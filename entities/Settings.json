@@ -1,0 +1,53 @@
+{
+  "name": "Settings",
+  "type": "object",
+  "properties": {
+    "setting_key": {
+      "type": "string",
+      "description": "Unique identifier for the setting"
+    },
+    "setting_value": {
+      "type": "string",
+      "description": "Value of the setting"
+    },
+    "setting_type": {
+      "type": "string",
+      "enum": [
+        "boolean",
+        "string",
+        "number",
+        "array"
+      ],
+      "description": "Data type of the setting"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ai_behavior",
+        "ui_preferences",
+        "performance",
+        "triggers",
+        "integrations"
+      ],
+      "description": "Category of the setting"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of what this setting does"
+    }
+  },
+  "required": [
+    "setting_key",
+    "setting_value",
+    "setting_type",
+    "category"
+  ],
+  "rls": {
+    "read": {
+      "created_by": "{{user.email}}"
+    },
+    "write": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}
